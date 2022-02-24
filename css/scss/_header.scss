@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  //   padding: rem(30) rem(0);
+  align-items: center;
+  flex-wrap: wrap;
+  height: rem(80);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: rem(30);
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  @include font-2-b;
+}
+
+.menu a {
+  color: $gray;
+}
+
+.menu .btn a {
+  color: $dark-violet;
+  border: 1px solid $dark-violet;
+  padding: rem(10) rem(30);
+}

@@ -1,0 +1,60 @@
+.diferencials h1 {
+  @include font-1;
+  color: $dark-violet;
+  font-size: rem(80);
+  font-weight: normal;
+  line-height: 1;
+  padding-top: rem(120);
+  &::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 250px;
+    background-color: $dark-violet;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+}
+
+.diferencials-itens {
+  display: flex;
+  padding-top: rem(100);
+  gap: rem(30);
+  h2 {
+    @include font-1;
+    color: $dark-violet;
+    font-size: rem(30);
+    font-weight: normal;
+    padding: rem(10) rem(0);
+  }
+  p {
+    @include font-2;
+    color: $gray;
+    font-size: rem(16);
+    font-weight: normal;
+    padding: rem(10) rem(0);
+  }
+}
+
+.diferencials-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // background-color: $dark-violet;
+  margin-top: rem(120);
+  padding: rem(40) rem(120);
+  background: $dark-violet url("/images/bg-pattern-how-we-work-desktop.svg")
+    no-repeat right/contain;
+  > h1 {
+    padding: rem(0);
+    color: $neutral;
+  }
+
+  a {
+    @include font-2;
+    text-transform: uppercase;
+    color: $neutral;
+    border: 1px solid $neutral;
+    padding: rem(10) rem(30);
+  }
+}

@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  border: 0;
+  color: #23292e;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+  font-size: 16px;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+input,
+button,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 5rem;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1.875rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+
+.menu a {
+  color: #837d87;
+}
+
+.menu .btn a {
+  color: #2d2640;
+  border: 1px solid #2d2640;
+  padding: 0.625rem 1.875rem;
+}
+
+.intro-bg {
+  background-color: #2d2640;
+  -webkit-box-shadow: inset 0px -120px #fff;
+  box-shadow: inset 0px -120px #fff;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding-top: 100px;
+  gap: 1.875rem;
+}
+
+.intro-content {
+  display: grid;
+  align-self: flex-start;
+  gap: 1.875rem;
+}
+
+.intro h1 {
+  font-family: "DM Serif Display", serif;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.intro h1::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 250px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.intro p,
+.intro a {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: normal;
+  max-width: 50ch;
+}
+
+.intro a {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border: 1px solid #fff;
+  padding: 0.625rem 1.875rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.intro img {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.diferencials h1 {
+  font-family: "DM Serif Display", serif;
+  color: #2d2640;
+  font-size: 5rem;
+  font-weight: normal;
+  line-height: 1;
+  padding-top: 7.5rem;
+}
+.diferencials h1::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 250px;
+  background-color: #2d2640;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.diferencials-itens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 6.25rem;
+  gap: 1.875rem;
+}
+.diferencials-itens h2 {
+  font-family: "DM Serif Display", serif;
+  color: #2d2640;
+  font-size: 1.875rem;
+  font-weight: normal;
+  padding: 0.625rem 0rem;
+}
+.diferencials-itens p {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  color: #837d87;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0.625rem 0rem;
+}
+
+.diferencials-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 7.5rem;
+  padding: 2.5rem 7.5rem;
+  background: #2d2640 url("/images/bg-pattern-how-we-work-desktop.svg") no-repeat right/contain;
+}
+.diferencials-banner > h1 {
+  padding: 0rem;
+  color: #fff;
+}
+.diferencials-banner a {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.625rem 1.875rem;
+}

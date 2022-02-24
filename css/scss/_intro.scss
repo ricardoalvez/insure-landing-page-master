@@ -1,0 +1,57 @@
+.intro-bg {
+  background-color: $dark-violet;
+  box-shadow: inset 0px -120px #fff;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding-top: 100px;
+  gap: rem(30);
+}
+
+.intro-content {
+  display: grid;
+  align-self: flex-start;
+  gap: rem(30);
+}
+
+.intro h1 {
+  @include font-1;
+  color: $neutral;
+  font-size: rem(80);
+  font-weight: normal;
+  line-height: 1;
+}
+
+.intro h1::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 250px;
+  background-color: $neutral;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.intro p,
+.intro a {
+  @include font-2;
+  color: $neutral;
+  font-size: rem(24);
+  font-weight: normal;
+  max-width: 50ch;
+}
+
+.intro a {
+  width: max-content;
+  border: 1px solid $neutral;
+  padding: rem(10) rem(30);
+  text-transform: uppercase;
+  font-size: rem(16);
+}
+
+.intro img {
+  height: 100%;
+  object-fit: cover;
+}
