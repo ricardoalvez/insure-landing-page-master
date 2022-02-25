@@ -27,6 +27,8 @@ img {
 html,
 body {
   overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 input,
@@ -43,6 +45,12 @@ textarea {
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.header-bg {
+  background-color: #fff;
+  z-index: 1;
+  position: relative;
 }
 
 .header {
@@ -83,6 +91,18 @@ textarea {
   color: #2d2640;
   border: 1px solid #2d2640;
   padding: 0.625rem 1.875rem;
+}
+
+.pattern-intro {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.pattern-intro-left {
+  position: absolute;
+  top: 550px;
+  left: 0px;
 }
 
 .intro-bg {
@@ -142,7 +162,7 @@ textarea {
   font-size: 1rem;
 }
 
-.intro img {
+.intro-img {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -215,4 +235,37 @@ textarea {
   color: #fff;
   border: 1px solid #fff;
   padding: 0.625rem 1.875rem;
+}
+
+.footer-bg {
+  background: url("/images/bg-pattern-footer-desktop.svg") no-repeat #fafafa;
+  height: 500px;
+}
+
+.social-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  padding-bottom: 1.25rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+hr {
+  border-bottom: 1px solid #837d87;
 }

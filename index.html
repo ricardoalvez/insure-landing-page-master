@@ -15,7 +15,7 @@
 
 <body>
 
-  <header>
+  <header class="header-bg">
     <div class="header container">
       <a href="./"><img src="./images/logo.svg" alt="Logotipo"></a>
       <nav aria-label="primaria">
@@ -44,10 +44,21 @@
           and your loved ones are protected.</p>
         <a href="#"> View plans</a>
       </div>
+      <!-- <img class="pattern-intro" src="./images/bg-pattern-intro-right-desktop.svg" alt="">
+      <img class="pattern-intro-left" src="./images/bg-pattern-intro-left-desktop.svg" alt=""> -->
+
+      <picture class="pattern-intro-left">
+        <source media="(min-width:650px)" srcset="./images/bg-pattern-intro-left-desktop.svg">
+        <img src="./images/bg-pattern-intro-left-mobile.svg" alt="">
+      </picture>
+      <picture class="pattern-intro">
+        <source media="(min-width:650px)" srcset="./images/bg-pattern-intro-right-desktop.svg">
+        <img src="./images/bg-pattern-intro-right-mobile.svg" alt="">
+      </picture>
 
 
       <div>
-        <img src="images/image-intro-desktop.jpg" alt="Familia">
+        <img class="intro-img" src="images/image-intro-desktop.jpg" alt="Familia">
       </div>
 
     </div>
@@ -88,6 +99,23 @@
 
   </article>
 
+
+  <footer class="footer-bg" aria-label="Rodapé">
+    <div class="social-footer container">
+      <a href="./"><img src="./images/logo.svg" alt="Logotipo"></a>
+      <div class="social">
+        <a href="facebook.com" target="_blank"><img src="./images/icon-facebook.svg" alt=""></a>
+        <a href="twitter.com" target="_blank"><img src="./images/icon-twitter.svg" alt=""></a>
+        <a href="pinterest.com" target="_blank"><img src="./images/icon-pinterest.svg" alt=""></a>
+        <a href="instagram.com" target="_blank"><img src="./images/icon-instagram.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="container">
+      <hr>
+    </div>
+
+
+  </footer>
 
 
 
