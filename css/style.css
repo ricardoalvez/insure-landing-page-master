@@ -199,7 +199,8 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 7.5rem;
+  margin-top: 9.375rem;
+  margin-bottom: 9.375rem;
   padding: 2.5rem 7.5rem;
   background: #2d2640 url("/images/bg-pattern-how-we-work-desktop.svg") no-repeat right/contain;
 }
