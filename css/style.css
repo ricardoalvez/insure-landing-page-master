@@ -81,16 +81,30 @@ textarea {
   text-transform: uppercase;
   font-family: "Karla", sans-serif;
   font-weight: 700;
+  letter-spacing: 0.125rem;
 }
 
 .menu a {
   color: #837d87;
 }
 
+.menu a:hover {
+  color: #2d2640;
+}
+
 .menu .btn a {
   color: #2d2640;
   border: 1px solid #2d2640;
   padding: 0.625rem 1.875rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu .btn a:hover {
+  background-color: #2d2640;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .pattern-intro {
@@ -239,7 +253,8 @@ textarea {
 
 .footer-bg {
   background: url("/images/bg-pattern-footer-desktop.svg") no-repeat #fafafa;
-  height: 500px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .social-footer {
@@ -260,12 +275,80 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 0.9375rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
+.social img:hover {
+  -webkit-filter: brightness(20%);
+  filter: brightness(20%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 hr {
   border-bottom: 1px solid #837d87;
+}
+
+.menu-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 3.125rem 0.9375rem;
+}
+
+.menu-footer_items {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 0.9375rem;
+}
+
+.menu-footer_items p {
+  padding-bottom: 0.9375rem;
+  color: #837d87;
+}
+
+.menu-footer_items li {
+  color: #2d2640;
+}
+
+.menu-footer_items li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.attribution {
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  color: #837d87;
+}
+
+.attribution a {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  letter-spacing: 0.125rem;
+  font-size: 0.625rem;
+  color: #2d2640;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
 }
